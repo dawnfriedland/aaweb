@@ -11,10 +11,34 @@ html,body {
 	font-family: Verdana, Trebuchet MS, Arial, sans-serif;
 	font-size: 10pt;
 	text-align:left;
-	padding:10px;
 }
+#body_content {
+  width: 60%;
+  background: gray;
+  color: #333;
+  position: absolute;
+  top: 250px;
+  left: 20px;
+  float: left;
+  width: 500;
+}
+
 #logo a {
     display:none;
+}
+#header {
+    background: #00529B;
+	width: 95%;
+	height: 225px;
+	margin-bottom: 20px;
+    position: absolute;
+    margin-top:20px;
+    margin-left:20px;
+}
+#logo-header {
+    position:absolute;
+    top:25px;
+    left: 25px;
 }
 
 //from http://csswizardry.com/2011/02/creating-a-pure-css-dropdown-menu/
@@ -27,8 +51,8 @@ html,body {
 	float:left;
 	width:100%;
 	position: absolute;
-	top: 120px;
-	left: 50px;
+	top: 185px;
+	left: 400px;
 }
 #menu li{
     list-style:none;
@@ -40,8 +64,8 @@ html,body {
 	padding:5px;
 	text-decoration:none;
 	border-top: solid;
-	border-top-color: #00529B;
-	color: #00529B;
+	border-top-color: green;
+	color: green;
 	padding: 5px;
 	display: block;
 	float: left;
@@ -49,18 +73,18 @@ html,body {
 	text-align:center;
 }
 #menu a:hover{
-	background: #00529B;
+	background: green;
 	color: white;
 }
 #menu li.selected a {
 color: white;
-background: #00529B;
+background: green;
 }
 
 
 //*--- DROPDOWN ---*/
 #menu ul ul{
-	background:#fff; //* Adding a background makes the dropdown work properly in IE7+.
+	background:#00529B; //* Adding a background makes the dropdown work properly in IE7+.
 	background:rgba(255,255,255,0); //* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
 	list-style:none;
 	position:absolute;
@@ -79,7 +103,7 @@ background: #00529B;
 	top:29px;
 }
 #menu ul li:hover a{ //* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
-    background: #00529B;
+    background: green;
     color: white;
 }
 #menu ul li:hover ul a{ //* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
@@ -87,7 +111,7 @@ background: #00529B;
 	float:left;
 }
 #menu ul li:hover ul li a:hover{ //* Here we define the most explicit hover states--what happens when you hover each individual link. */
-	background:#333;
+	background:#00529B;
 }
 
 
