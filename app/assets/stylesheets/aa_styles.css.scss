@@ -1,33 +1,39 @@
-///*------------------------------------*\
+//------------------------------------
 //	RESET
-//\*------------------------------------*/
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
 	margin:0;
 	padding:0;
 }
-
+//------------------------------------
+//	BODY
 html,body {
-	background-color: white;
+	background-color: #FFFFFF;
 	font-family: Verdana, Trebuchet MS, Arial, sans-serif;
 	font-size: 10pt;
 	text-align:left;
 }
 #body_content {
-  width: 60%;
-  background: gray;
-  color: #333;
+  background: #FFFFFF;
+  border-style: solid;
+  border-color: #123EAB;
+  border-width: 1px;
   position: absolute;
-  top: 250px;
+  top: 245px; 
+  right: 5px;
   left: 20px;
+  width:95%;
   float: left;
-  width: 500;
+  margin-right:20px;
 }
 
 #logo a {
     display:none;
 }
 #header {
-    background: #00529B;
+    background: #FFFFFF;
+    border-style: solid;
+    border-color: #123EAB; //logo blue
+    border-width: 1px;
 	width: 95%;
 	height: 225px;
 	margin-bottom: 20px;
@@ -37,22 +43,28 @@ html,body {
 }
 #logo-header {
     position:absolute;
-    top:25px;
-    left: 25px;
+    top:20px;
+    left: 20px;
+    //border-style: solid;
+    //border-width: 1px;
+    //border-color: #123EAB; //logo blue
+    width: 500px;
+    
 }
 
 //from http://csswizardry.com/2011/02/creating-a-pure-css-dropdown-menu/
-//*------------------------------------
+//------------------------------------
 //	NAV
-//--------------------------------------
 #menu{
-	font-weight:bold;
+	//font-weight:bold;
 	margin-bottom:10px;
 	float:left;
 	width:100%;
 	position: absolute;
-	top: 185px;
-	left: 400px;
+	top: 190px;
+	left: 270px;
+    z-index:5;
+
 }
 #menu li{
     list-style:none;
@@ -61,57 +73,65 @@ html,body {
 	position:relative;
 }
 #menu a{
-	padding:5px;
+    font-weight:2px;
+	padding:2px;
 	text-decoration:none;
 	border-top: solid;
-	border-top-color: green;
-	color: green;
-	padding: 5px;
+	border-width: 1px;
+	border-top-color: #466FD5; // menu blue
+	color: #123EAB; //logo blue
 	display: block;
 	float: left;
 	width:100px;
 	text-align:center;
 }
-#menu a:hover{
-	background: green;
-	color: white;
-}
-#menu li.selected a {
-color: white;
-background: green;
+
+#menu li.selected a{
+	background: #123EAB; //logo blue
+	color: #FFFFFF; //white
 }
 
-
-//*--- DROPDOWN ---*/
+//------------------------------------
+//	DROPDOWN
+	
 #menu ul ul{
-	background:#00529B; //* Adding a background makes the dropdown work properly in IE7+.
-	background:rgba(255,255,255,0); //* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+	background:#00529B; // Adding a background makes the dropdown work properly in IE7+.
+	background:rgba(255,255,255,0); // make the background fully transparent where we can
 	list-style:none;
 	position:absolute;
-	left:-9999px; //* Hide off-screen when not needed (this is more accessible than display:none;) */
+	left:-9999px; // Hide off-screen when not needed (this is more accessible than display:none;)
 }
 #menu ul ul li{
-	padding-top:1px; //* Introducing a padding between the li and the a give the illusion spaced items */
+	padding-top:1px; //give the illusion spaced items 
 }
 #menu ul ul a{
-	white-space:nowrap; //* Stop text wrapping and creating multi-line dropdown items */
+	white-space:nowrap; // Stop text wrapping and creating multi-line dropdown items
     width:200px;
 	text-align:left;
 }
-#menu ul li:hover ul{ //* Display the dropdown on hover */
-	left:0; //* Bring back on-screen when needed */
-	top:29px;
+#menu ul li:hover ul{ // Display the dropdown on hover
+	left:0; // Bring back on-screen when needed 
+	top:21px;
 }
-#menu ul li:hover a{ //* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
-    background: green;
-    color: white;
+#menu ul li:hover a{ // create persistent hover state for top-most link when your cursor has moved down the list. 
+    background: #466FD5; // menu blue
+    color: #FFFFFF;
 }
-#menu ul li:hover ul a{ //* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+#menu ul li:hover ul a{ //persistent hover state creates global style for links even before they're hovered. Here we undo these effects.
 	text-decoration:none;
 	float:left;
 }
-#menu ul li:hover ul li a:hover{ //* Here we define the most explicit hover states--what happens when you hover each individual link. */
-	background:#00529B;
+#menu ul li:hover ul li a:hover{ // define most explicit hover states
+	background: #123EAB; //logo blue
 }
 
+//------------------------------------
+//	FOOTER
 
+.footer {
+	text-align:right;
+	width: 95%px;
+	height:23px;
+    position: relative;
+    display: none;
+}
