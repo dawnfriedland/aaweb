@@ -11,14 +11,20 @@ html,body {
 	font-family: Verdana, Trebuchet MS, Arial, sans-serif;
 	font-size: 10pt;
 	text-align:left;
+	color:  #123EAB; //logo blue
 }
+h1 {
+font-size:24px;
+padding-bottom:25px;
+}
+
 #body_content {
   background: #FFFFFF;
-  border-style: solid;
-  border-color: #123EAB;
-  border-width: 1px;
+  //border-style: solid;
+  //border-color: #123EAB;
+  //border-width: 1px;
   position: absolute;
-  top: 245px;
+  top: 275px;
   right: 5px;
   left: 20px;
   width:95%;
@@ -29,18 +35,16 @@ html,body {
 	width:400px;
 	float: right;
 }
-
 #logo a {
     display:none;
 }
 #header {
     background: #FFFFFF;
-    border-style: solid;
-    border-color: #123EAB; //logo blue
-    border-width: 1px;
+    //border-style: solid;
+    //border-color: #123EAB; //logo blue
+    //border-width: 1px;
 	width: 95%;
 	height: 225px;
-	margin-bottom: 20px;
     position: absolute;
     margin-top:20px;
     margin-left:20px;
