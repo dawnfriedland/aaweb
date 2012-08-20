@@ -1,5 +1,8 @@
 <%= render :partial => "/shared/header"  %>
 <section id='body_content'>
+<%=
+    render partial: "/flex-slider/microdrone"
+%>
 <%=raw @page.content_for(:body) %>
 </section>
 <%= render :partial => "/shared/footer"  %>

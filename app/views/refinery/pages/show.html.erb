@@ -1,5 +1,24 @@
-<%= render :partial => "/shared/header"  %>
+<%= render partial: "/shared/header"  %>
+
 <section id='body_content'>
+  <%=
+  case @page.slug
+    when "civil-planning"
+      render partial: "/flex-slider/civil-planning"
+    when "construction-progress"
+      render partial: "/flex-slider/construction-progress"
+    when "environmental-monitoring"
+      render partial: "/flex-slider/environmental-monitoring"
+    when "hospitality"
+      render partial: "/flex-slider/hospitality"
+    when "inspections"
+      render partial: "/flex-slider/inspections"
+    when "photography"
+      render partial: "/flex-slider/photography"
+    when "real-estate"
+      render partial: "/flex-slider/real-estate"
+  end
+  %>
 <%=raw @page.content_for(:body) %>
 </section>
 <%= render :partial => "/shared/footer"  %>
