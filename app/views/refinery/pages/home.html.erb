@@ -1,4 +1,3 @@
-<%= render :partial => "/shared/header"  %>
 <%=render partial: "/flex-slider/home"%>
 
 <section id='body_content'>
@@ -8,4 +7,10 @@
 <section id='side_body_content'>
 <%=raw @page.content_for(:side_body) %>
 </section>
-<%= render :partial => "/shared/footer"  %>
+<section id='news_body_content'>
+<%=raw @page.content_for(:news_body) %>
+</section>
+<section id='lower_body_content'>
+<%=raw @page.content_for(:lower_body) %>
+</section>
+
