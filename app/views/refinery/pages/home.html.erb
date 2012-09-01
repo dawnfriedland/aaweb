@@ -1,7 +1,9 @@
-<%=render partial: "/flex-slider/home"%>
 
 <section id='body_content'>
-<%=raw @page.content_for(:body) %>
+<%=render partial: "/flex-slider/home"%>
+<div id="body_content_text">
+  <%=raw @page.content_for(:body) %>
+</div>
 </section>
 
 <section id='side_body_content'>

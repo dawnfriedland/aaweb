@@ -7,197 +7,162 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 //------------------------------------
 //	BODY
 html,body {
-	background-color: #FFFFFF;
-	font-family: Verdana, Trebuchet MS, Arial, sans-serif;
-	font-size: 10pt;
-	text-align:left;
-	color:  #123EAB; //logo blue
+background-color: #FFFFFF;
+font-family: Verdana, Trebuchet MS, Arial, sans-serif;
+font-size: 10pt;
+text-align:left;
+color:  #123EAB; //logo blue
 }
 h1 {
 font-size:24px;
 padding-bottom:25px;
 padding-top:25px;
-
+}
+#page_container {
+width: 1024px;
+margin: auto;
+}
+#page_container_table {
 }
 #body_content {
-	background: #FFFFFF;
-	border-style: solid;
-	border-color: #123EAB;
-	border-width: 1px;
-	border-radius:5px;
-	position: absolute;
-	top: 570px;
-	left: 20px;
-	width:500px;
-	float: right;
-	margin-right:20px;
-	height:300px;
-	overflow:scroll;
+background: #FFFFFF;
+border-style: solid;
+border-color: #123EAB;
+border-width: 1px;
+border-radius:5px;
+padding:10px;
+}
+#body_content_text{
+margin-right:10px;
 }
 #side_body_content {
-	background: #FFFFFF;
-	border-style: solid;
-	border-color: #123EAB;
-	border-width: 1px;
-	position: absolute;
-	top: 92px;
-	right: 5px;
-	left: 550px;
-	width:550px;
-	float: left;
-	margin-right:20px;
-	border-radius:4px;
-	height:755px;
-	padding:10px;
-	overflow:scroll
+background: #FFFFFF;
+border-style: solid;
+border-color: #123EAB;
+border-width: 1px;
+border-radius:4px;
+padding:10px;
+margin-top:10px;
 }
 #news_body_content {
-	background: #FFFFFF;
-	border-style: solid;
-	border-color: #123EAB;
-	border-width: 1px;
-	position: absolute;
-	top: 92px;
-	right: 5px;
-	left: 1050px;
-	width:200px;
-	float: left;
-	margin-right:20px;
-	border-radius:4px;
-	height:755px;
-	padding:10px;
-	overflow:scroll
+background: #FFFFFF;
+border-style: solid;
+border-color: #123EAB;
+border-width: 1px;
+border-radius:4px;
+padding:10px;
+margin-top:10px;
 }
 #lower_body_content {
-	background: #FFFFFF;
-	border-style: solid;
-	border-color: #123EAB;
-	border-width: 1px;
-	position: absolute;
-	top: 1000px;
-	left: 20px;
-	width:520px;
-	float: left;
-	margin-right:20px;
-	border-radius:4px;
-	height:800px;
-	padding:10px;
+background: #FFFFFF;
+border-style: solid;
+border-color: #123EAB;
+border-width: 1px;
+border-radius:4px;
+padding:10px;
+margin-top:10px;
 }
 #home_flex_slider {
-	width:500px;
-	//padding-left:10px;
-	//float: right;
-	position: absolute;
-	top: 170px;
-	left: 20px;
-	//width:240px;  
+width:500px;
+position:relative;
+margin-top:-30px;
+margin-right:30px;
+float:left;
 }
 #header {
-	background: #FFFFFF;
-	//border-style: solid;
-	//border-color: #123EAB; //logo blue
-	//border-width: 1px;
-	width: 95%;
-	height: 125px;
-	position: absolute;
-	margin-top:20px;
-	margin-left:20px;
+background: #FFFFFF;
+position:relative;
+z-index:3;
+height:160px;
 }
 #logo-header {
-	position:absolute;
-	top:2px;
-	left:10px;
-	//border-style: solid;
-	//border-width: 1px;
-	//border-color: #123EAB; //logo blue
-	width: 500px;
-	z-index:4;
+position:relative;
+top:10px;
+left:100px;
+right:100px;
+width: 500px;
+z-index:4;
 }
 
 //from http://csswizardry.com/2011/02/creating-a-pure-css-dropdown-menu/
 //------------------------------------
 //	NAV
 #menu{
-	margin-bottom:5px;
-	position: absolute;
-	top: 5px;
-	left:530px;
-	z-index:5;
+z-index:5;
+float:right;
+margin-top:20px;
 }
 #menu li{
-	list-style:none;
-	float:left;
-	margin-right:25px;
-	position:relative;
+list-style:none;
+float:left;
+margin-right:25px;
+position:relative;
 }
 #menu a{
-	font-size:12px;
-	padding:1px;
-	text-decoration:none;
-	border-top: solid;
-	border-width: 1px;
-	border-top-color: #466FD5; // menu blue
-	color: #123EAB; //logo blue
-	display: block;
-	float: left;
-	width:75px;
-	text-align:center;
-	border-radius:3px;
+font-size:12px;
+padding:1px;
+text-decoration:none;
+border-top: solid;
+border-width: 1px;
+border-top-color: #466FD5; // menu blue
+color: #123EAB; //logo blue
+display: block;
+float: left;
+width:75px;
+text-align:center;
+border-radius:3px;
 }
 
 #menu li.selected a{
-	background: #123EAB; //logo blue
-	color: #FFFFFF; //white
-	border-radius:3px;
+background: #123EAB; //logo blue
+color: #FFFFFF; //white
+border-radius:3px;
 }
 
 //------------------------------------
 //	DROPDOWN
 
 #menu ul ul{
-	background:#00529B; // Adding a background makes the dropdown work properly in IE7+.
-	background:rgba(255,255,255,0); // make the background fully transparent where we can
-	list-style:none;
-	position:absolute;
-	left:-9999px; // Hide off-screen when not needed (this is more accessible than display:none;)
+background:#00529B; // Adding a background makes the dropdown work properly in IE7+.
+background:rgba(255,255,255,0); // make the background fully transparent where we can
+list-style:none;
+position:absolute;
+left:-9999px; // Hide off-screen when not needed (this is more accessible than display:none;)
 }
 #menu ul ul li{
-	padding-top:1px; //give the illusion spaced items
+padding-top:2px; //give the illusion spaced items
 }
 #menu ul ul a{
-	white-space:nowrap; // Stop text wrapping and creating multi-line dropdown items
-    width:150px;
-	text-align:left;
+white-space:nowrap; // Stop text wrapping and creating multi-line dropdown items
+width:160px;
+text-align:left;
 }
 #menu ul li:hover ul{ // Display the dropdown on hover
-	left:0; // Bring back on-screen when needed
-	top:15px;
+left:0; // Bring back on-screen when needed
+top:15px;
 }
 #menu ul li:hover a{ // create persistent hover state for top-most link when your cursor has moved down the list.
-    background: #466FD5; // menu blue
-    color: #FFFFFF;
+background: #466FD5; // menu blue
+color: #FFFFFF;
 }
 #menu ul li:hover ul a{ //persistent hover state creates global style for links even before they're hovered. Here we undo these effects.
-	text-decoration:none;
-	float:left;
-	padding-left:10px;
+text-decoration:none;
+float:left;
+padding-left:10px;
 }
 #menu ul li:hover ul li a:hover{ // define most explicit hover states
-	background: #123EAB; //logo blue
+background: #123EAB; //logo blue
 }
 
 //------------------------------------
 //	FOOTER
 
 #page_container footer {
-  background: red;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-
-  position: absolute;
-  bottom: 10px;
-  width: 550px;
-  margin-left:20px;
+background: #FFFFFF;
+border-style: solid;
+border-color: #123EAB;
+border-width: 1px;
+border-radius:4px;
+padding:10px;
+margin-top:10px;
 }
