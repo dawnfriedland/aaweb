@@ -1,22 +1,31 @@
+<table cellspacing='10px' width="100%">
+	<tr>
+		<td id='body_content'>
+			<section >
+			  <%=
+			  case @page.slug
+			    when "civil-planning"
+			      render partial: "/flex-slider/civil-planning"
+			    when "construction-progress"
+			      render partial: "/flex-slider/construction-progress"
+			    when "environmental-monitoring"
+			      render partial: "/flex-slider/environmental-monitoring"
+			    when "hospitality"
+			      render partial: "/flex-slider/hospitality"
+			    when "inspections"
+			      render partial: "/flex-slider/inspections"
+			    when "photography"
+			      render partial: "/flex-slider/photography"
+			    when "real-estate"
+			      render partial: "/flex-slider/real-estate"
+			  end
+			  %>
+			<div id="body_content_text">
+			  <%=raw @page.content_for(:body) %>
+			</div>
+			</section>
+		</td>
+	</tr>
+</table>
 
-<section id='body_content'>
-  <%=
-  case @page.slug
-    when "civil-planning"
-      render partial: "/flex-slider/civil-planning"
-    when "construction-progress"
-      render partial: "/flex-slider/construction-progress"
-    when "environmental-monitoring"
-      render partial: "/flex-slider/environmental-monitoring"
-    when "hospitality"
-      render partial: "/flex-slider/hospitality"
-    when "inspections"
-      render partial: "/flex-slider/inspections"
-    when "photography"
-      render partial: "/flex-slider/photography"
-    when "real-estate"
-      render partial: "/flex-slider/real-estate"
-  end
-  %>
-<%=raw @page.content_for(:body) %>
-</section>
+

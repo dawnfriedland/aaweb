@@ -16,23 +16,30 @@ color:  #123EAB; //logo blue
 h1 {
 font-size:24px;
 padding-bottom:25px;
-padding-top:25px;
 }
 #page_container {
 width: 1024px;
 margin: auto;
 }
 #page_container_table {
+width: 1024px;
+margin: auto;
+	li {
+	margin-left:20px;
+	}
 }
 #body_content {
 background: #FFFFFF;
 border-style: solid;
 border-color: #123EAB;
 border-width: 1px;
-border-radius:5px;
-padding:10px;
+border-radius:10px;
+padding:25px;
+background:#B4C5ED; //background blue
+position:relative;
+top:0px;
 }
-#body_content_text{
+#body_content_text {
 margin-right:10px;
 }
 #side_body_content {
@@ -40,34 +47,40 @@ background: #FFFFFF;
 border-style: solid;
 border-color: #123EAB;
 border-width: 1px;
-border-radius:4px;
-padding:10px;
-margin-top:10px;
+border-radius:10px;
+padding:25px;
+background:#B4C5ED; //background blue
 }
 #news_body_content {
+top:1px;
+  td {}
+}
+#news_column {
 background: #FFFFFF;
 border-style: solid;
 border-color: #123EAB;
 border-width: 1px;
-border-radius:4px;
-padding:10px;
-margin-top:10px;
+border-radius:10px;
+padding:25px;
+background:#B4C5ED; //background blue
 }
 #lower_body_content {
 background: #FFFFFF;
 border-style: solid;
 border-color: #123EAB;
 border-width: 1px;
-border-radius:4px;
-padding:10px;
-margin-top:10px;
+border-radius:10px;
+padding:25px;
+background:#B4C5ED; //background blue
 }
 #home_flex_slider {
 width:500px;
 position:relative;
-margin-top:-30px;
 margin-right:30px;
 float:left;
+  li {
+  margin-left:0px;
+  }
 }
 #header {
 background: #FFFFFF;
@@ -78,7 +91,7 @@ height:160px;
 #logo-header {
 position:relative;
 top:10px;
-left:100px;
+left:20px;
 right:100px;
 width: 500px;
 z-index:4;
@@ -162,7 +175,7 @@ background: #FFFFFF;
 border-style: solid;
 border-color: #123EAB;
 border-width: 1px;
-border-radius:4px;
+border-radius:10px;
 padding:10px;
 margin-top:10px;
 }

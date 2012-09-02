@@ -1,18 +1,32 @@
-
-<section id='body_content'>
-<%=render partial: "/flex-slider/home"%>
-<div id="body_content_text">
-  <%=raw @page.content_for(:body) %>
-</div>
-</section>
-
-<section id='side_body_content'>
-<%=raw @page.content_for(:side_body) %>
-</section>
-<section id='news_body_content'>
-<%=raw @page.content_for(:news_body) %>
-</section>
-<section id='lower_body_content'>
-<%=raw @page.content_for(:lower_body) %>
-</section>
+<table cellspacing='10px'>
+	<tr>
+		<td id='body_content'>
+			<section >
+			<%=render partial: "/flex-slider/home"%>
+			<div id="body_content_text">
+			  <%=raw @page.content_for(:body) %>
+			</div>
+			</section>
+		</td>
+		<td rowspan="3" id='news_column' valign='top' >
+			<section id='news_body_content' >
+			<%=raw @page.content_for(:news_body) %>
+			</section>
+		</td>
+	</tr>
+	<tr>
+		<td id='side_body_content'>
+			<section >
+			<%=raw @page.content_for(:side_body) %>
+			</section>
+		</td>
+	</tr>
+		<tr>
+			<td id='lower_body_content'>
+			<section >
+			<%=raw @page.content_for(:lower_body) %>
+			</section>
+		</td>
+	</tr>
+</table>
 
