@@ -1,3 +1,7 @@
+//logo blue - darkest ---- #123EAB
+//menu blue - medium ----- #466FD5
+//background blue - light -#E6EAF2
+//darkest blue ------------#00529B
 //------------------------------------
 //	RESET
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
@@ -30,26 +34,26 @@ margin: auto;
 }
 #body_content {
 background: #FFFFFF;
-border-style: solid;
-border-color: #123EAB;
-border-width: 1px;
+border-style: none;
 border-radius:10px;
 padding:25px;
-background:#B4C5ED; //background blue
+background:#E6EAF2; //background blue
 position:relative;
 top:0px;
+	h1 {
+	margin-top:20px;
+	}
 }
 #body_content_text {
+margin-top:20px;
 margin-right:10px;
 }
 #side_body_content {
 background: #FFFFFF;
-border-style: solid;
-border-color: #123EAB;
-border-width: 1px;
+border-style: none;
 border-radius:10px;
 padding:25px;
-background:#B4C5ED; //background blue
+background:#E6EAF2; //background blue
 }
 #news_body_content {
 top:1px;
@@ -57,21 +61,18 @@ top:1px;
 }
 #news_column {
 background: #FFFFFF;
-border-style: solid;
+border-style: none;
 border-color: #123EAB;
-border-width: 1px;
 border-radius:10px;
 padding:25px;
-background:#B4C5ED; //background blue
+background:#E6EAF2; //background blue
 }
 #lower_body_content {
 background: #FFFFFF;
-border-style: solid;
-border-color: #123EAB;
-border-width: 1px;
+border-style: none;
 border-radius:10px;
 padding:25px;
-background:#B4C5ED; //background blue
+background:#E6EAF2; //background blue
 }
 #home_flex_slider {
 width:500px;
@@ -97,9 +98,8 @@ width: 500px;
 z-index:4;
 }
 
-//from http://csswizardry.com/2011/02/creating-a-pure-css-dropdown-menu/
 //------------------------------------
-//	NAV
+//NAVIGATION from http://csswizardry.com/2011/02/creating-a-pure-css-dropdown-menu/
 #menu{
 z-index:5;
 float:right;
@@ -127,16 +127,19 @@ border-radius:3px;
 }
 
 #menu li.selected a{
-background: #123EAB; //logo blue
+background: #466FD5; //medium blue
 color: #FFFFFF; //white
 border-radius:3px;
 }
+
+
+
 
 //------------------------------------
 //	DROPDOWN
 
 #menu ul ul{
-background:#00529B; // Adding a background makes the dropdown work properly in IE7+.
+background:#E6EAF2; // Adding a background makes the dropdown work properly in IE7+.
 background:rgba(255,255,255,0); // make the background fully transparent where we can
 list-style:none;
 position:absolute;
@@ -167,6 +170,28 @@ padding-left:10px;
 background: #123EAB; //logo blue
 }
 
+//------------------------------------
+//CONTACT
+
+.placeholder-fallback {
+display: block;
+float: left;
+width: 150px;
+}
+.field {
+height:30px;	
+}
+.actions {
+position:relative;
+top:70px;
+height:30px;
+float:right;
+}
+.new_inquiry {
+margin-top:20px;
+width:750px;
+height:225px;
+}
 //------------------------------------
 //	FOOTER
 
