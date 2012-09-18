@@ -18,6 +18,8 @@
 			      render partial: "/flex-slider/photography"
 			    when "real-estate"
 			      render partial: "/flex-slider/real-estate"
+			    when "marketing"
+			      render partial: "/flex-slider/marketing"
 			  end
 			  %>
 			<div id="body_content_text">
@@ -25,7 +27,7 @@
 			</div>
 			</section>
 		</td>
-		<td>
+		<td id='side_body_content' width='200px' valign='top'>
 			<section >
 			<div>
 			  <%=raw @page.content_for(:side_body) %>
