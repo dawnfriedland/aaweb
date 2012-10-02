@@ -36,7 +36,9 @@ gem 'refinerycms-inquiries', '~> 2.0.0'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
+gem 'capistrano-ext'
+gem 'rvm-capistrano'
 
 # To use debugger
 # gem 'debugger'
